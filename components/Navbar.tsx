@@ -5,13 +5,21 @@ const Navbar: React.FC = () => {
     <div className="sticky top-0 z-40 backdrop-blur-xl bg-black/60 border-b border-white/5">
       <div className="max-w-[var(--max)] w-[calc(100%-40px)] mx-auto flex items-center justify-between gap-4 py-4">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#7c3aed] to-[#00f5a0] p-[1px] shadow-[0_0_20px_rgba(124,58,237,0.3)]">
-            <div className="w-full h-full bg-[#05060b] rounded-[11px] grid place-items-center">
-             <img 
-  src="/https://res.cloudinary.com/dsprn0ew4/image/upload/v1769091229/IMG_3126_zwosm5.jpg" 
-  alt="Logo" 
-  className="w-6 h-6 object-contain" 
-/>
+         {/* Línea 8: Este es el contenedor con el borde de color (degradado) */}
+<div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#7c3aed] to-[#00f5a0] p-[1px] shadow-[0_0_20px_rgba(124,58,237,0.3)]">
+  
+  {/* Línea 9: Este es el fondo oscuro interno que rodea al logo */}
+  <div className="w-full h-full bg-[#05060b] rounded-[11px] grid place-items-center overflow-hidden">
+    
+    {/* Línea 10: Aquí va tu imagen. Ajusta w y h según necesites */}
+    <img 
+      src="https://res.cloudinary.com/dsprn0ew4/image/upload/v1769091229/IMG_3126_zwosm5.jpg" 
+      alt="Logo" 
+      className="w-7 h-7 object-contain" 
+    />
+
+  </div>
+</div>
             </div>
           </div>
           <div className="flex flex-col leading-none">
