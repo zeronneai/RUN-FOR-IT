@@ -4,21 +4,26 @@ const Navbar: React.FC = () => {
   return (
     <div className="sticky top-0 z-40 backdrop-blur-xl bg-black/60 border-b border-white/5">
       <div className="max-w-[var(--max)] w-[calc(100%-40px)] mx-auto flex items-center justify-between gap-4 py-4">
-       <div className="flex items-center gap-3">
-  {/* Contenedor simple para tu logo */}
-  <div className="flex items-center justify-center overflow-hidden">
-    <img 
-      src="https://res.cloudinary.com/dsprn0ew4/image/upload/v1769091229/IMG_3126_zwosm5.jpg" 
-      alt="Logo" 
-      className="h-10 w-auto object-contain" 
-    />
-  </div>
-</div>
-            <div className="font-black tracking-widest text-sm text-white uppercase">RUN FOR IT</div>
-            <div className="text-[10px] text-white/40 uppercase tracking-widest mt-1">Club • Community • Events</div>
-          </div>
+       <div className="flex items-center gap-4">
+        {/* Logo de la zapatilla solo */}
+        <div className="flex items-center justify-center">
+          <img 
+            src="https://res.cloudinary.com/dsprn0ew4/image/upload/v1769091229/IMG_3126_zwosm5.jpg" 
+            alt="Logo" 
+            className="h-10 w-auto object-contain" 
+          />
         </div>
 
+        {/* Texto del Club alineado */}
+        <div className="flex flex-col leading-tight">
+          <div className="font-black tracking-widest text-sm text-white uppercase">
+            RUN FOR IT
+          </div>
+          <div className="text-[10px] text-white/40 uppercase tracking-widest">
+            Club • Community • Events
+          </div>
+        </div>
+      </div>
         <nav className="hidden lg:flex items-center gap-6">
           {['Events', 'Shop', 'Community', 'Gallery', 'Challenges'].map((item) => (
             <a 
