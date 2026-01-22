@@ -4,18 +4,16 @@ const Navbar: React.FC = () => {
   return (
     <div className="sticky top-0 z-40 backdrop-blur-xl bg-black/60 border-b border-white/5">
       <div className="max-w-[var(--max)] w-[calc(100%-40px)] mx-auto flex items-center justify-between gap-4 py-4">
-        <div className="flex items-center gap-3">
-      {/* Reemplaza desde la línea 8 hasta la 12 por esto: */}
-<div className="flex items-center justify-center overflow-hidden">
-  <img 
-    src="https://res.cloudinary.com/dsprn0ew4/image/upload/v1769091229/IMG_3126_zwosm5.jpg" 
-    alt="Logo" 
-    className="h-10 w-auto object-contain" 
-  />
+       <div className="flex items-center gap-3">
+  {/* Contenedor simple para tu logo */}
+  <div className="flex items-center justify-center overflow-hidden">
+    <img 
+      src="https://res.cloudinary.com/dsprn0ew4/image/upload/v1769091229/IMG_3126_zwosm5.jpg" 
+      alt="Logo" 
+      className="h-10 w-auto object-contain" 
+    />
+  </div>
 </div>
-            </div>
-          </div>
-          <div className="flex flex-col leading-none">
             <div className="font-black tracking-widest text-sm text-white uppercase">RUN FOR IT</div>
             <div className="text-[10px] text-white/40 uppercase tracking-widest mt-1">Club • Community • Events</div>
           </div>
