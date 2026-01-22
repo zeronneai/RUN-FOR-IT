@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
         {/* Logo de la zapatilla solo */}
         <div className="flex items-center justify-center">
           <img 
-            src="https://res.cloudinary.com/dsprn0ew4/image/upload/v1769091229/IMG_3126_zwosm5.jpg" 
+            src="https://res.cloudinary.com/dsprn0ew4/image/upload/v1769109307/Gemini_Generated_Image_us258qus258qus25_fbnqvt.png" 
             alt="Logo" 
             className="h-10 w-auto object-contain" 
           />
