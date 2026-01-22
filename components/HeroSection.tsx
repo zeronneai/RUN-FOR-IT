@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 
 const HeroSection: React.FC = () => {
   const [challengePercentage, setChallengePercentage] = useState(65);
-  const bgImage = "https://res.cloudinary.com/dsprn0ew4/image/upload/v1769091229/IMG_3126_zwosm5.jpg";
+  const bgImage = "https://res.cloudinary.com/dsprn0ew4/image/upload/v1769107065/IMG_3139_em0azi.jpg";
 
   useEffect(() => {
     const interval = setInterval(() => {
