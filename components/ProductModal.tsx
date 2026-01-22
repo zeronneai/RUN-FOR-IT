@@ -12,23 +12,30 @@ const ProductModal: React.FC<ProductModalProps> = ({ isOpen, onClose, product, s
   const modalBoxRef = useRef<HTMLDivElement>(null);
   const [activeImg, setActiveImg] = useState(0);
 
-  useEffect(() => {
-    if (isOpen) {
-      setActiveImg(0); // Reset to primary image when opening
-      if (modalBoxRef.current && window.gsap) {
-        document.body.style.overflow = 'hidden';
-        window.gsap.fromTo(modalBoxRef.current,
-          { y: 50, opacity: 0, scale: 0.95 },
-          { y: 0, opacity: 1, scale: 1, duration: 0.4, ease: "power3.out" }
-        );
-      }
-    } else {
-      document.body.style.overflow = '';
+ useEffect(() => {
+  if (isOpen) {
+    document.body.style.overflow = 'hidden';
+    
+    if (modalBoxRef.current && window.gsap) {
+      window.gsap.fromTo(modalBoxRef.current,
+        { y: 50, opacity: 0, scale: 0.95 },
+        { y: 0, opacity: 1, scale: 1, duration: 0.4, ease: "power3.out" }
+      );
     }
-  }, [isOpen]);
+  } else {
+    document.body.style.overflow = '';
+  }
 
-  if (!isOpen) return null;
-
+  // --- ESTA ES LA PARTE CLAVE QUE DEBES AÑADIR ---
+  // Esta función de limpieza se ejecuta cuando el componente desaparece
+  return () => {
+    document.body.style.overflow = '';
+    // Si usas ScrollTrigger, forzamos un refresh para que el scroll vuelva a la vida
+    if (window.ScrollTrigger) {
+      window.ScrollTrigger.refresh();
+    }
+  };
+}, [isOpen]);
   return (
     <div
       className="fixed inset-0 bg-black/80 backdrop-blur-xl flex items-center justify-center p-4 z-[999]"
