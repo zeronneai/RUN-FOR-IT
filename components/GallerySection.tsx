@@ -111,17 +111,17 @@ const GallerySection: React.FC<{ showToast: (msg: string) => void }> = ({ showTo
     { 
       title: "SUNDAY RUN RECAP", 
       type: "Video • 0:22 • Downtown", 
-      videoUrl: "https://res.cloudinary.com/dsprn0ew4/video/upload/v1769098790/c058a055-ef2b-4d38-b6bc-d353bb16a8f1_yf9x69.mov" 
+      videoUrl: "/media/c058a055-ef2b-4d38-b6bc-d353bb16a8f1-yf9x69.mp4" 
     },
     { 
       title: "HIGH ENERGY START", 
       type: "Video • 0:18 • Group", 
-      videoUrl: "https://res.cloudinary.com/dsprn0ew4/video/upload/v1769098791/c058a055-ef2b-4d38-b6bc-d353bb16a8f1_crsrjw.mov" 
+      videoUrl: "/media/c058a055-ef2b-4d38-b6bc-d353bb16a8f1-crsrjw.mp4" 
     },
     { 
       title: "RACE DAY MOMENTS", 
       type: "Video • 0:15 • 5K", 
-      videoUrl: "https://res.cloudinary.com/dsprn0ew4/video/upload/v1769098787/c058a055-ef2b-4d38-b6bc-d353bb16a8f1_ol3alw.mov" 
+      videoUrl: "/media/c058a055-ef2b-4d38-b6bc-d353bb16a8f1-ol3alw.mp4" 
     }
   ];
 

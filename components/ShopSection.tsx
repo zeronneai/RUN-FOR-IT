@@ -45,32 +45,32 @@ const ShopSection: React.FC<ShopSectionProps> = ({ openProductModal, showToast }
       description: 'Premium tee with neon vibes and comfortable cut. Ideal for running or lifestyle.', 
       price: 35, 
       category: 'Apparel',
-      primaryImage: 'https://res.cloudinary.com/dsprn0ew4/image/upload/v1769097709/Gemini_Generated_Image_1vpr8j1vpr8j1vpr_vdlqxt.png',
-      secondaryImage: 'https://res.cloudinary.com/dsprn0ew4/image/upload/v1769097710/hf_20260122_151551_85e410fc-70eb-4da9-b87c-1c737c4b3df2_lorc9r.jpg'
+      primaryImage: '/media/gemini-generated-image-1vpr8j1vpr8j1vpr-vdlqxt.png',
+      secondaryImage: '/media/hf-20260122-151551-85e410fc-70eb-4da9-b87c-1c737c4b3df2-lorc9r.webp'
     },
     { 
       name: 'Performance Shorts', 
       description: 'Lightweight, featuring a hidden pocket and high-quality elastic fit.', 
       price: 45, 
       category: 'Apparel',
-      primaryImage: 'https://res.cloudinary.com/dsprn0ew4/image/upload/v1769097708/Gemini_Generated_Image_sc4cknsc4cknsc4c_ndkruu.png',
-      secondaryImage: 'https://res.cloudinary.com/dsprn0ew4/image/upload/v1769097710/hf_20260122_154048_e6479cda-ea1b-48cc-9369-598e1f9c164d_xyfsgs.png'
+      primaryImage: '/media/gemini-generated-image-sc4cknsc4cknsc4c-ndkruu.png',
+      secondaryImage: '/media/hf-20260122-154048-e6479cda-ea1b-48cc-9369-598e1f9c164d-xyfsgs.webp'
     },
     { 
       name: 'Club Cap', 
       description: 'Breathable with high-definition premium embroidery.', 
       price: 25, 
       category: 'Accessories',
-      primaryImage: 'https://res.cloudinary.com/dsprn0ew4/image/upload/v1769097709/Gemini_Generated_Image_rq9eztrq9eztrq9e_auvpkk.png',
-      secondaryImage: 'https://res.cloudinary.com/dsprn0ew4/image/upload/v1769097709/hf_20260122_151708_b3fee943-7e6e-473a-9303-56a21b637039_tq4eqo.png'
+      primaryImage: '/media/gemini-generated-image-rq9eztrq9eztrq9e-auvpkk.png',
+      secondaryImage: '/media/hf-20260122-151708-b3fee943-7e6e-473a-9303-56a21b637039-tq4eqo.webp'
     },
     { 
       name: 'T-SHIRT', 
       description: 'High-quality cotton blend with premium screen print and a relaxed athletic fit.', 
       price: 15, 
       category: 'Apparel',
-      primaryImage: 'https://res.cloudinary.com/dsprn0ew4/image/upload/v1769097710/Gemini_Generated_Image_4l7v214l7v214l7v_dcwcbi.png',
-      secondaryImage: 'https://res.cloudinary.com/dsprn0ew4/image/upload/v1769097709/hf_20260122_154609_d2909e86-aebc-4a39-9ea6-c19733e6bafd_js7wb5.png'
+      primaryImage: '/media/gemini-generated-image-4l7v214l7v214l7v-dcwcbi.png',
+      secondaryImage: '/media/hf-20260122-154609-d2909e86-aebc-4a39-9ea6-c19733e6bafd-js7wb5.webp'
     },
   ];
 
